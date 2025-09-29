@@ -9,23 +9,52 @@ export const resumes: Resume[] = [
         overallScore: 85,
         ATS: {
           score: 90,
-          tips: [],
+          tips: [
+            {
+              type: "good",
+              tip: "Excellent customer service skills - always friendly and attentive"
+            }
+          ],
         },
         toneAndStyle: {
           score: 90,
-          tips: [],
+          tips: [
+            {
+              type: "good",
+              tip: "Always greet customers with a smile",
+              explanation: "A friendly greeting creates a positive first impression and makes customers feel welcome."
+            }
+          ],
         },
         content: {
           score: 90,
-          tips: [],
+          tips: [
+            {
+              type: "good",
+              tip: "Always greet customers with a smile",
+              explanation: "A friendly greeting creates a positive first impression and makes customers feel welcome."
+            }
+          ],
         },
         structure: {
           score: 90,
-          tips: [],
+          tips: [
+            {
+              type: "good",
+              tip: "Always greet customers with a smile",
+              explanation: "A friendly greeting creates a positive first impression and makes customers feel welcome."
+            }
+          ],
         },
         skills: {
           score: 90,
-          tips: [],
+          tips: [
+            {
+              type: "good",
+              tip: "Always greet customers with a smile",
+              explanation: "A friendly greeting creates a positive first impression and makes customers feel welcome."
+            }
+          ],
         },
       },
     },
@@ -89,6 +118,183 @@ export const resumes: Resume[] = [
         },
       },
     },
+    {
+      id: "4",
+      companyName: "Microsoft",
+      jobTitle: "Software Engineer",
+      imagePath: "/images/resume-2.png",
+      resumePath: "/resumes/resume-2.pdf",
+      feedback: {
+        overallScore: 78,
+        ATS: {
+          score: 82,
+          tips: [
+            {
+              type: "improve",
+              tip: "Consider using more industry-standard keywords",
+            }
+          ],
+        },
+        toneAndStyle: {
+          score: 85,
+          tips: [
+            {
+              type: "good",
+              tip: "Professional tone maintained throughout",
+              explanation: "The resume demonstrates appropriate formality and clarity in communication."
+            }
+          ],
+        },
+        content: {
+          score: 75,
+          tips: [
+            {
+              type: "improve",
+              tip: "Add more quantifiable achievements",
+              explanation: "Include specific metrics and numbers to demonstrate the impact of your work and contributions."
+            }
+          ],
+        },
+        structure: {
+          score: 88,
+          tips: [
+            {
+              type: "good",
+              tip: "Clear section organization and hierarchy",
+              explanation: "Well-structured layout makes it easy for recruiters to quickly find relevant information."
+            }
+          ],
+        },
+        skills: {
+          score: 70,
+          tips: [
+            {
+              type: "improve",
+              tip: "Expand technical skills section with relevant frameworks",
+              explanation: "Include more specific technologies and tools commonly used in software engineering roles."
+            }
+          ],
+        },
+      },
+    },
+    {
+      id: "5",
+      companyName: "Amazon",
+      jobTitle: "Product Manager",
+      imagePath: "/images/resume-2.png",
+      resumePath: "/resumes/resume-2.pdf",
+      feedback: {
+        overallScore: 92,
+        ATS: {
+          score: 95,
+          tips: [
+            {
+              type: "good",
+              tip: "Excellent keyword optimization for product management roles",
+            }
+          ],
+        },
+        toneAndStyle: {
+          score: 88,
+          tips: [
+            {
+              type: "good",
+              tip: "Strong leadership voice and strategic thinking demonstrated",
+              explanation: "Language effectively conveys product management competencies and executive presence."
+            }
+          ],
+        },
+        content: {
+          score: 94,
+          tips: [
+            {
+              type: "good",
+              tip: "Outstanding use of metrics and business impact statements",
+              explanation: "Each role clearly demonstrates quantifiable results and business value delivered."
+            }
+          ],
+        },
+        structure: {
+          score: 90,
+          tips: [
+            {
+              type: "good",
+              tip: "Logical flow from experience to skills to education",
+              explanation: "Resume structure prioritizes most relevant information and guides reader attention effectively."
+            }
+          ],
+        },
+        skills: {
+          score: 92,
+          tips: [
+            {
+              type: "good",
+              tip: "Comprehensive blend of technical and soft skills",
+              explanation: "Skills section effectively balances product management tools, analytics, and leadership capabilities."
+            }
+          ],
+        },
+      },
+    },
+    {
+      id: "6",
+      companyName: "Netflix",
+      jobTitle: "Data Scientist",
+      imagePath: "/images/resume-2.png",
+      resumePath: "/resumes/resume-2.pdf",
+      feedback: {
+        overallScore: 73,
+        ATS: {
+          score: 80,
+          tips: [
+            {
+              type: "good",
+              tip: "Include more data science and machine learning keywords"
+            }
+          ],
+        },
+        toneAndStyle: {
+          score: 82,
+          tips: [
+            {
+              type: "good",
+              tip: "Analytical and detail-oriented tone appropriate for data roles",
+              explanation: "Writing style effectively communicates precision and technical competency expected in data science."
+            }
+          ],
+        },
+        content: {
+          score: 68,
+          tips: [
+            {
+              type: "improve",
+              tip: "Add more specific project outcomes and model performance metrics",
+              explanation: "Include accuracy scores, performance improvements, and business impact of your data science projects."
+            }
+          ],
+        },
+        structure: {
+          score: 75,
+          tips: [
+            {
+              type: "improve",
+              tip: "Consider adding a dedicated 'Projects' section",
+              explanation: "Data science roles benefit from showcasing specific projects with methodologies and results."
+            }
+          ],
+        },
+        skills: {
+          score: 85,
+          tips: [
+            {
+              type: "good",
+              tip: "Strong technical skills coverage including Python, R, and SQL",
+              explanation: "Core data science programming languages and tools are well represented in the skills section."
+            }
+          ],
+        },
+      },
+    }
   ];
   
   export const AIResponseFormat = `
@@ -142,7 +348,7 @@ export const resumes: Resume[] = [
   }: {
     jobTitle: string;
     jobDescription: string;
-    AIResponseFormat: string;
+    AIResponseFormat:string ;
   }) =>
     `You are an expert in ATS (Applicant Tracking System) and resume analysis.
     Please analyze and rate this resume and suggest how to improve it.
