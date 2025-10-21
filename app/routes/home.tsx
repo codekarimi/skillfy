@@ -31,7 +31,7 @@ export default function Home() {
 
   useEffect(() => {
     const loadResumes = async () => {
-      // setLoadingResumes(true);
+      setLoadingResumes(true);
 
       const resumes = (await kv.list('resume:*', true)) as KVItem[];
 
